@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --bg-color: #151515;
+  --main-color: #252525cf;
+  --gold-color: #ffd700;
+  --job-title: #313131cf;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 20px;
+}

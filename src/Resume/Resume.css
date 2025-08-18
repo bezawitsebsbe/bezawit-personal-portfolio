@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --bg-color: #151515;
+  --main-color: #252525cf;
+  --gold-color: #ffd700;
+  --job-title: #313131cf;
+}
+.resume-wrapper {
+  padding-left: 2em;
+  color: white;
+}
+.resume-container1 {
+  padding: 1em 0;
+  display: flex;
+
+  align-items: center;
+}
+.icon-div {
+  font-size: 1em;
+  color: var(--gold-color);
+  width: 2em;
+  height: 2em;
+  padding-top: 0.4em;
+  padding-left: 0.4em;
+
+  border-radius: 10px;
+
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+.title-div h1 {
+  margin-top: -0.2em;
+}
+
+.bullet {
+  position: relative;
+  padding: -4em 0;
+  display: flex;
+
+  align-items: center;
+}
+.circle {
+  position: absolute;
+  background-color: var(--gold-color);
+  left: 0.8em;
+  top: 0.4em;
+  width: 0.5em;
+  height: 0.5em;
+
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px rgb(138, 136, 136);
+  z-index: 10;
+}
+
+.content {
+  margin-left: 4em;
+}
+.content h3 {
+  padding-bottom: 1em;
+}
+#duration {
+  color: var(--gold-color);
+}
+.resume-container2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}

@@ -1,0 +1,132 @@
+import React from "react";
+import "./About.css";
+import logo from "../logo192.png";
+import mobile from "../icon-app.svg";
+import web from "../icon-dev.svg";
+import ui from "../icon-design.svg";
+import frontend from "../front-end (2).png";
+import { Link } from "react-router-dom";
+import js from "../javascript.png";
+import figma from "../Figma.svg";
+import dart from "../Dart.svg";
+import flutter from "../Flutter.svg";
+import post from "../Postman.svg";
+import android from "../AndroidStudio.svg";
+
+import Main from "../Main/Main";
+
+// Adjust the path as necessary
+
+export default function About() {
+  const NameOfScreen = "About Me";
+  return (
+    <Main NameOfScreen={NameOfScreen}>
+      <article className="body">
+        <p>
+          I am a software developer with a passion for creating dynamic and
+          responsive web applications. My journey in tech started with a
+          curiosity for how things work, and it has evolved into a full-fledged
+          career where I get to solve problems and build solutions that make a
+          difference.
+        </p>
+        <p>
+          I specialize in front-end development, focusing on user experience and
+          accessibility. I enjoy working with modern frameworks and libraries to
+          create seamless interactions and engaging interfaces. My goal is to
+          continue learning and growing in this ever-evolving field, while
+          contributing to projects that have a positive impact on users and the
+          community.
+        </p>
+        <h1>What I'm Doing</h1>
+        <div className="skills-main-wrapper">
+          <div className="skills-wrapper">
+            <div className="img">
+              <img src={mobile} alt="mobile" />
+            </div>
+            <div className="developer-wrapper">
+              <h2>Mobile Apps</h2>
+              <p className="paragraph">
+                Development of applications for Android and iOS.
+              </p>
+            </div>
+          </div>
+          <div className="skills-wrapper">
+            <div className="img">
+              <img src={web} alt="web-development" />
+            </div>
+            <div className="developer-wrapper">
+              <h2>Web Development</h2>
+              <p className="paragraph">
+                High-quality development of sites at the professional level.
+              </p>
+            </div>
+          </div>
+          <div className="skills-wrapper">
+            <div className="img">
+              <img src={ui} alt="ui" />
+            </div>
+            <div className="developer-wrapper">
+              <h2>UI/UX Design</h2>
+              <p className="paragraph">
+                High-quality design of applications and sites at the
+                professional level.
+              </p>
+            </div>
+          </div>
+          <div className="skills-wrapper">
+            <div className="img">
+              <img src={frontend} alt="frontend" />
+            </div>
+            <div className="developer-wrapper">
+              <h2>Frontend Development</h2>
+              <p className="paragraph">
+                Creating responsive and dynamic user interfaces using modern
+                technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="skills-wrapper2">
+          <h1 className="skills">Skills</h1>
+          <ul className="skills-list scrollbar">
+            <li className="skills-item">
+              <a href="#" target="_blank">
+                <img src={logo} alt="skill-logo" />
+              </a>
+            </li>
+            <li className="skills-item">
+              <a href="#" target="_blank">
+                <img src={js} alt="skill-logo" />
+              </a>
+            </li>
+            <li className="skills-item">
+              <a href="#" target="_blank">
+                <img src={figma} alt="skill-logo" />
+              </a>
+            </li>
+            <li className="skills-item">
+              <a href="#" target="_blank">
+                <img src={dart} alt="skill-logo" />
+              </a>
+            </li>
+            <li className="skills-item">
+              <a href="#" target="_blank">
+                <img src={flutter} alt="skill-logo" />
+              </a>
+            </li>
+            <li className="skills-item">
+              <a href="#" target="_blank">
+                <img src={android} alt="skill-logo" />
+              </a>
+            </li>
+            <li className="skills-item">
+              <a href="#" target="_blank">
+                <img src={post} alt="skill-logo" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </Main>
+  );
+}

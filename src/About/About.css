@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --bg-color: #151515;
+  --main-color: #252525cf;
+  --gold-color: #ffd700;
+  --job-title: #313131cf;
+}
+body {
+  background-color: var(--bg-color);
+}
+body h1 {
+  font-size: x-large;
+  margin-top: 1.4em;
+  margin-left: 0.38em;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: var(--main-color);
+
+  border-radius: 13px;
+  width: 80%;
+  margin: 1em 2em;
+  box-shadow: -1px -1px 1px rgb(81, 80, 80);
+}
+.skills-wrapper .img {
+  margin: 2em 0;
+}
+.skills-wrapper div {
+  padding: 0 1em;
+}
+.skills-wrapper img {
+  width: auto;
+  height: 9vh;
+  object-fit: cover;
+  cursor: pointer;
+}
+.developer-wrapper {
+  margin-left: 0.5em;
+  margin: 1.6em 0;
+}
+.developer-wrapper h2 {
+  margin-bottom: 0.6em;
+}
+.developer-wrapper .paragraph {
+  margin-left: 0.2em;
+  text-align: left;
+}
+.skills {
+  margin-bottom: -2em;
+}
+.skill-image-wrapper {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.skills-main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+.scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  padding: 4em 0;
+}
+.skill-image-wrapper img {
+  padding: 1em 2.3em;
+  height: 35vh;
+  width: auto;
+}
+
+.custom-scrollbar {
+  /* position: absolute; */
+  position: fixed;
+  bottom: 1em;
+  left: 50%;
+  margin-bottom: 2em;
+  width: 50%;
+  height: 6px;
+  background: var(--job-title);
+  border-radius: 13px;
+  transform: translateX(-50%);
+}
+.scroll-thumb {
+  height: 100%;
+  width: 50%;
+  background: var(--gold-color);
+  border-radius: 13px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+/* neewwwww2 */
+.skills {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4em;
+
+  margin: 0 2em;
+  padding: 2em;
+  margin-bottom: 3em;
+
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+.skills-list img {
+  width: auto;
+  height: 30vh;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* WebKit-based browsers (Chrome, Safari) */
+.skills-list::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+.skills-list::-webkit-scrollbar-track {
+  background: var(--bg-color); /* Background of the scrollbar track */
+  border-radius: 10px; /* Round the edges */
+}
+
+.skills-list::-webkit-scrollbar-thumb {
+  background: var(--gold-color); /* Color of the scrollbar handle */
+  border-radius: 10px; /* Round the handle */
+}
+
+.skills-list::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-color-hover); /* Color when hovering over the handle */
+}
+
+/* Firefox */
+.skills-list {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: var(--gold-color) var(--bg-color); /* thumb color and track color */
+}
