@@ -1,6 +1,6 @@
 import React from "react";
 import "./Main.css";
-import logo from "../logo192.png";
+import logo from "../assets/logo192.png";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Main({ children, NameOfScreen }) {

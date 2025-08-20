@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Main from "../Main/Main";
 import "./Portfolio.css";
-import netflix from "../netflix.png";
+import netflix from "../assets/netflix.png";
+import restaurant from "../assets/restaurant.png";
 
 const Portfolio = () => {
   const NameOfScreen = "Portfolio";
@@ -15,21 +16,97 @@ const Portfolio = () => {
     switch (activeTab) {
       case "all":
         return (
-          <ul>
+          <ul className="project-wrapper">
             <li className="project-list">
               <a href="#">
                 <figure>
                   <img src={netflix} alt="project-image" />
                 </figure>
               </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
             </li>
-            <li className="project-list"></li>
-            <li className="project-list"></li>
-            <li className="project-list"></li>
-            <li className="project-list"></li>
-            <li className="project-list"></li>
-            <li className="project-list"></li>
-            <li className="project-list"></li>
+            <li className="project-list">
+              <a href="https://bezawitsebsbe.github.io/restaurant-page/">
+                <figure>
+                  <img src={restaurant} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Restaurant page</h6>
+              <p>Website</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
+            <li className="project-list">
+              <a href="#">
+                <figure>
+                  <img src={netflix} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Netflix Clone</h6>
+              <p>Application</p>
+            </li>
           </ul>
         );
       case "web-development":

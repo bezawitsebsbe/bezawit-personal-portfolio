@@ -1,17 +1,17 @@
 import React from "react";
 import "./About.css";
-import logo from "../logo192.png";
-import mobile from "../icon-app.svg";
-import web from "../icon-dev.svg";
-import ui from "../icon-design.svg";
-import frontend from "../front-end (2).png";
+import logo from "../assets/logo192.png";
+import mobile from "../assets/icon-app.svg";
+import web from "../assets/icon-dev.svg";
+import ui from "../assets/icon-design.svg";
+import frontend from "../assets/front-end (2).png";
 import { Link } from "react-router-dom";
-import js from "../javascript.png";
-import figma from "../Figma.svg";
-import dart from "../Dart.svg";
-import flutter from "../Flutter.svg";
-import post from "../Postman.svg";
-import android from "../AndroidStudio.svg";
+import js from "../assets/javascript.png";
+import figma from "../assets/Figma.svg";
+import dart from "../assets/Dart.svg";
+import flutter from "../assets/Flutter.svg";
+import post from "../assets/Postman.svg";
+import android from "../assets/AndroidStudio.svg";
 
 import Main from "../Main/Main";
 

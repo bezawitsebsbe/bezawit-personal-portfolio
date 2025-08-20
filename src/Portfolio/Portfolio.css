@@ -24,3 +24,31 @@ nav li {
 .content {
   margin-top: 20px;
 }
+
+.project-list a figure img {
+  width: auto;
+  height: 25vh;
+  border-radius: 15px;
+}
+.project-list a {
+  text-decoration: none;
+}
+.project-list h6 {
+  margin: 0 1em;
+  margin-top: 1em;
+  font-size: 1em;
+  font-weight: 500;
+}
+.project-list p {
+  margin-left: 1.1em;
+}
+.content {
+  padding-right: 1em;
+  margin-left: 1em;
+}
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  list-style-type: none;
+}
