@@ -90,37 +90,37 @@ export default function About() {
           <h1 className="skills">Skills</h1>
           <ul className="skills-list scrollbar">
             <li className="skills-item">
-              <a href="#" target="_blank">
+              <a href="React" target="_blank">
                 <img src={logo} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="#" target="_blank">
+              <a href="JavaScript" target="_blank">
                 <img src={js} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="#" target="_blank">
+              <a href="Figma" target="_blank">
                 <img src={figma} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="#" target="_blank">
+              <a href="Dart" target="_blank">
                 <img src={dart} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="#" target="_blank">
+              <a href="Flutter" target="_blank">
                 <img src={flutter} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="#" target="_blank">
+              <a href="Android" target="_blank">
                 <img src={android} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="#" target="_blank">
+              <a href="Postman" target="_blank">
                 <img src={post} alt="skill-logo" />
               </a>
             </li>

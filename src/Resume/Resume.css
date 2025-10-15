@@ -11,8 +11,11 @@
   --job-title: #313131cf;
 }
 .resume-wrapper {
+  position: relative;
   padding-left: 2em;
   color: white;
+  padding-bottom: 4em;
+  margin-bottom: -2em;
 }
 .resume-container1 {
   padding: 1em 0;
@@ -59,8 +62,10 @@
 .content {
   margin-left: 4em;
 }
-.content h3 {
+.main-title {
   padding-bottom: 1em;
+  padding-left: 2em;
+  margin-top: -1.1em;
 }
 #duration {
   color: var(--gold-color);
@@ -68,4 +73,46 @@
 .resume-container2 {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+.mini-circle {
+  background-color: var(--gold-color);
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  margin-right: 0.4em;
+  z-index: 10;
+}
+.experiance-paragraph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+button {
+  bottom: 0;
+  right: 5em;
+  color: var(--gold-color);
+  padding: 1em;
+  border-radius: 13px;
+  box-shadow: -1px -1px 1px 1px rgb(66, 65, 65);
+}
+button:hover {
+  box-shadow: -1px -1px 1px 1px #dec84dc5;
+}
+.download-button .icon-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  position: absolute;
+  bottom: 0;
+  right: 5em;
+  color: var(--gold-color);
+  margin-right: 2.5em;
+}
+.download-button {
+  display: flex;
+  align-items: center;
+}
+
+.download-div {
+  margin-right: 0.5em;
 }

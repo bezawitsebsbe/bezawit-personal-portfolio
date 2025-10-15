@@ -48,9 +48,16 @@ textarea {
   width: 52em;
   padding: 1em;
   margin: 2em;
-
+  color: var(--gold-color);
   border-radius: 13px;
   box-shadow: 0 0 1px 1px rgb(66, 65, 65);
+  transition: box-shadow 0.4s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  box-shadow: 0 0 1px 1px var(--gold-color);
+  outline: none;
 }
 input[name="name"],
 input[name="email"] {
@@ -61,6 +68,10 @@ input::placeholder {
 }
 textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
+}
+input:-webkit-autofill {
+  background-color: var(--bg-color) !important;
+  -webkit-text-fill-color: var(--gold-color); /* Text color for autofill */
 }
 button {
   position: absolute;
