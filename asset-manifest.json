@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bezawit-personal-portfolio/static/css/main.c83fa9de.css",
-    "main.js": "/bezawit-personal-portfolio/static/js/main.c6f05df5.js",
+    "main.js": "/bezawit-personal-portfolio/static/js/main.c7da805a.js",
     "static/media/netflix.png": "/bezawit-personal-portfolio/static/media/netflix.5b219b01672373988486.png",
     "static/media/restaurant.png": "/bezawit-personal-portfolio/static/media/restaurant.43b61069e4139a2a9a20.png",
     "static/media/HobbyReads.png": "/bezawit-personal-portfolio/static/media/HobbyReads.c3ad501a97333e715429.png",
@@ -22,10 +22,10 @@
     "index.html": "/bezawit-personal-portfolio/index.html",
     "static/media/Flutter.svg": "/bezawit-personal-portfolio/static/media/Flutter.2b30aec73f8a837a9441384ced08185f.svg",
     "main.c83fa9de.css.map": "/bezawit-personal-portfolio/static/css/main.c83fa9de.css.map",
-    "main.c6f05df5.js.map": "/bezawit-personal-portfolio/static/js/main.c6f05df5.js.map"
+    "main.c7da805a.js.map": "/bezawit-personal-portfolio/static/js/main.c7da805a.js.map"
   },
   "entrypoints": [
     "static/css/main.c83fa9de.css",
-    "static/js/main.c6f05df5.js"
+    "static/js/main.c7da805a.js"
   ]
 }
