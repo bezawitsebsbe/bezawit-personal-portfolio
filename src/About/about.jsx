@@ -5,7 +5,6 @@ import mobile from "../assets/icon-app.svg";
 import web from "../assets/icon-dev.svg";
 import ui from "../assets/icon-design.svg";
 import frontend from "../assets/front-end (2).png";
-import { Link } from "react-router-dom";
 import js from "../assets/javascript.png";
 import figma from "../assets/Figma.svg";
 import dart from "../assets/Dart.svg";
@@ -91,38 +90,66 @@ export default function About() {
           <h1 className="skills">Skills</h1>
           <ul className="skills-list scrollbar">
             <li className="skills-item">
-              <a href="https://reactjs.org/" target="_blank">
+              <a
+                href="https://reactjs.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src={logo} alt="skill-logo" />
               </a>
             </li>
 
             <li className="skills-item">
-              <a href="https://www.figma.com/" target="_blank">
+              <a
+                href="https://www.figma.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src={figma} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="https://dart.dev" target="_blank">
+              <a
+                href="https://dart.dev"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src={dart} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="https://flutter.dev" target="_blank">
+              <a
+                href="https://flutter.dev"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src={flutter} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="https://developer.android.com" target="_blank">
+              <a
+                href="https://developer.android.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src={android} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="https://www.javascript.com/" target="_blank">
+              <a
+                href="https://www.javascript.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src={js} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="https://www.postman.com/" target="_blank">
+              <a
+                href="https://www.postman.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src={post} alt="skill-logo" />
               </a>
             </li>

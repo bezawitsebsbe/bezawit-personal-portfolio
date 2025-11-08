@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import logo from "../assets/portfolio_image.jpg";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -56,7 +56,9 @@ export default function Main({ children, NameOfScreen }) {
         </div>
         <div className="name-div">
           <h1>Bezawit Sebsbe</h1>
-          <a className="job-title">Software developer</a>
+          <a className="job-title" href="#">
+            Software developer
+          </a>
         </div>
         <button className="show-contact" href="#" onClick={handleShowContact}>
           {viewportSize.isMobile ? (
