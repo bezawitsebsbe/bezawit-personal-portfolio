@@ -152,3 +152,170 @@ body h1 {
   scrollbar-width: thin; /* Makes the scrollbar thinner */
   scrollbar-color: var(--gold-color) var(--bg-color); /* thumb color and track color */
 }
+
+/* Responsive Design */
+@media (max-width: 499px) {
+  .body p {
+    padding: 1em 0;
+    text-align: left;
+  }
+  .skills-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-wrapper {
+    height: 26vh;
+    width: 90%;
+  }
+  .skills-wrapper .img {
+    padding-left: 40%;
+  }
+  .developer-wrapper .paragraph {
+    margin-left: 0.2em;
+    text-align: center;
+  }
+  .developer-wrapper h2 {
+    text-align: center;
+  }
+
+  .skills-list {
+    gap: 1em;
+
+    margin: 0 1em;
+    padding: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 25px;
+
+    scroll-padding-inline: 25px;
+  }
+  .skills-list img {
+    width: auto;
+    height: 17vh;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
+  .skills-wrapper2 {
+    margin-bottom: -2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .body p {
+    padding: 1em 0;
+  }
+  .skills-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 28vh;
+    width: 90%;
+  }
+
+  .skills-wrapper .img {
+    margin: 1em 0.5em;
+  }
+
+  .skills-wrapper img {
+    width: auto;
+    height: 6vh;
+    object-fit: cover;
+    cursor: pointer;
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+  .developer-wrapper {
+    margin: 1em 0.5em;
+  }
+
+  .developer-wrapper h2 {
+    margin-bottom: 0.3em;
+    font-weight: 500;
+  }
+  .developer-wrapper .paragraph {
+    margin-left: 0.2em;
+    /* text-align: left; */
+  }
+
+  .skills-list {
+    gap: 1em;
+
+    margin: 0 1em;
+    padding: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 25px;
+
+    scroll-padding-inline: 25px;
+  }
+  .skills-list img {
+    width: auto;
+    height: 19vh;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
+  .skills-wrapper2 {
+    margin-bottom: -2em;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 27vh;
+    width: 90%;
+  }
+
+  .skills-wrapper .img {
+    margin: 0.5em 0.5em;
+  }
+
+  .skills-wrapper img {
+    width: auto;
+    height: 7vh;
+    object-fit: cover;
+    cursor: pointer;
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+  .developer-wrapper {
+    margin: 1em 0.5em;
+  }
+  .developer-wrapper h2 {
+    margin-bottom: 0.3em;
+    font-weight: 500;
+  }
+  .developer-wrapper .paragraph {
+    margin-left: 0.2em;
+    text-align: left;
+  }
+  .skills-list {
+    gap: 1.3em;
+
+    margin: 0 1em;
+    padding: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 25px;
+
+    scroll-padding-inline: 25px;
+  }
+  .skills-list img {
+    width: auto;
+    height: 13vh;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
+  .skills-wrapper2 {
+    margin-bottom: -2em;
+  }
+}

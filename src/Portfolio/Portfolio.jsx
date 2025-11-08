@@ -7,6 +7,8 @@ import todolist from "../assets/todolist.png";
 import quantum from "../assets/quantum.png";
 import amazon from "../assets/amazon.png";
 import fitness from "../assets/fitness-tracker.png";
+import hobbyReads from "../assets/HobbyReads.png";
+import AlbumsList from "../assets/AlbumsList.png";
 const Portfolio = () => {
   const NameOfScreen = "Portfolio";
   const [activeTab, setActiveTab] = useState("all");
@@ -42,16 +44,16 @@ const Portfolio = () => {
               <p>Website</p>
             </li>
             <li className="project-list">
-              <a href="#">
+              <a href="https://bezawitsebsbe.github.io/quantum_field_website/">
                 <figure>
                   <img src={quantum} alt="project-image" />
                 </figure>
               </a>
-              <h6></h6>
+              <h6>Quantum Field Website</h6>
               <p>Website</p>
             </li>
             <li className="project-list">
-              <a href="#">
+              <a href="https://github.com/bezawitsebsbe/amazon-clone">
                 <figure>
                   <img src={amazon} alt="project-image" />
                 </figure>
@@ -69,7 +71,7 @@ const Portfolio = () => {
               <p>web-app</p>
             </li>
             <li className="project-list">
-              <a href="#">
+              <a href="https://github.com/bezawitsebsbe/fitness-tracker-web-app">
                 <figure>
                   <img src={fitness} alt="project-image" />
                 </figure>
@@ -77,41 +79,24 @@ const Portfolio = () => {
               <h6>Fitness Tracker</h6>
               <p>Web-app</p>
             </li>
+
             <li className="project-list">
-              <a href="#">
+              <a href="https://github.com/bezawitsebsbe/hobbyreads_finalflutter">
                 <figure>
-                  <img src={netflix} alt="project-image" />
+                  <img src={hobbyReads} alt="project-image" />
                 </figure>
               </a>
-              <h6>Netflix Clone</h6>
-              <p>Application</p>
+              <h6>Hobby_Reads</h6>
+              <p>Mobile app</p>
             </li>
             <li className="project-list">
-              <a href="#">
+              <a href="https://github.com/bezawitsebsbe/-jetpack-compose-assignment-1">
                 <figure>
-                  <img src={netflix} alt="project-image" />
+                  <img src={AlbumsList} alt="project-image" />
                 </figure>
               </a>
-              <h6>Netflix Clone</h6>
-              <p>Application</p>
-            </li>
-            <li className="project-list">
-              <a href="#">
-                <figure>
-                  <img src={netflix} alt="project-image" />
-                </figure>
-              </a>
-              <h6>Netflix Clone</h6>
-              <p>Application</p>
-            </li>
-            <li className="project-list">
-              <a href="#">
-                <figure>
-                  <img src={netflix} alt="project-image" />
-                </figure>
-              </a>
-              <h6>Netflix Clone</h6>
-              <p>Application</p>
+              <h6>Albums List</h6>
+              <p>Mobile app</p>
             </li>
           </ul>
         );
@@ -119,7 +104,7 @@ const Portfolio = () => {
         return (
           <ul className="project-wrapper">
             <li className="project-list">
-              <a href="#">
+              <a href="https://github.com/bezawitsebsbe/amazon-clone">
                 <figure>
                   <img src={amazon} alt="project-image" />
                 </figure>
@@ -137,7 +122,7 @@ const Portfolio = () => {
               <p>web-app</p>
             </li>
             <li className="project-list">
-              <a href="#">
+              <a href="https://github.com/bezawitsebsbe/fitness-tracker-web-app">
                 <figure>
                   <img src={fitness} alt="project-image" />
                 </figure>
@@ -164,23 +149,38 @@ const Portfolio = () => {
               <p>Website</p>
             </li>
             <li className="project-list">
-              <a href="#">
+              <a href="https://bezawitsebsbe.github.io/quantum_field_website/">
                 <figure>
                   <img src={quantum} alt="project-image" />
                 </figure>
               </a>
-              <h6></h6>
+              <h6>Quantum Field Website</h6>
               <p>Website</p>
             </li>
           </ul>
         );
       case "mobile-app":
         return (
-          <div>
-            <h3>UI/UX Projects</h3>
-            <div>UI/UX Project 1</div>
-            <div>UI/UX Project 2</div>
-          </div>
+          <ul className="project-wrapper-mobile">
+            <li className="project-list-mobile">
+              <a href="https://github.com/bezawitsebsbe/hobbyreads_finalflutter">
+                <figure>
+                  <img src={hobbyReads} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Hobby_Reads</h6>
+              <p>Mobile app</p>
+            </li>
+            <li className="project-list-mobile">
+              <a href="https://github.com/bezawitsebsbe/-jetpack-compose-assignment-1">
+                <figure>
+                  <img src={AlbumsList} alt="project-image" />
+                </figure>
+              </a>
+              <h6>Albums List</h6>
+              <p>Mobile app</p>
+            </li>
+          </ul>
         );
       default:
         return null;

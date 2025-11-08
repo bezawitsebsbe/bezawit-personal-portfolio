@@ -24,18 +24,20 @@ export default function About() {
       <article className="body">
         <p>
           I am a software developer with a passion for creating dynamic and
-          responsive web applications. My journey in tech started with a
-          curiosity for how things work, and it has evolved into a full-fledged
-          career where I get to solve problems and build solutions that make a
-          difference.
+          responsive web and mobile applications. My journey in tech began with
+          a curiosity about how things work, evolving into a robust career where
+          I solve problems and build solutions that truly make a difference.
+          Currently, I am also pursuing a major in AI, allowing me to integrate
+          artificial intelligence into my projects and enhance their
+          functionality.
         </p>
         <p>
-          I specialize in front-end development, focusing on user experience and
-          accessibility. I enjoy working with modern frameworks and libraries to
-          create seamless interactions and engaging interfaces. My goal is to
-          continue learning and growing in this ever-evolving field, while
-          contributing to projects that have a positive impact on users and the
-          community.
+          Specializing in full-stack development, I focus on both user
+          experience and backend functionality. I enjoy working with modern
+          frameworks and libraries to create seamless interactions and robust
+          applications. My goal is to continuously learn and grow in this
+          ever-evolving field while contributing to projects that have a
+          positive impact on users and the community.
         </p>
         <h1>What I'm Doing</h1>
         <div className="skills-main-wrapper">
@@ -80,8 +82,7 @@ export default function About() {
             <div className="developer-wrapper">
               <h2>Frontend Development</h2>
               <p className="paragraph">
-                Creating responsive and dynamic user interfaces using modern
-                technologies.
+                Creating responsive and dynamic user interfaces.
               </p>
             </div>
           </div>
@@ -90,37 +91,38 @@ export default function About() {
           <h1 className="skills">Skills</h1>
           <ul className="skills-list scrollbar">
             <li className="skills-item">
-              <a href="React" target="_blank">
+              <a href="https://reactjs.org/" target="_blank">
                 <img src={logo} alt="skill-logo" />
               </a>
             </li>
+
             <li className="skills-item">
-              <a href="JavaScript" target="_blank">
-                <img src={js} alt="skill-logo" />
-              </a>
-            </li>
-            <li className="skills-item">
-              <a href="Figma" target="_blank">
+              <a href="https://www.figma.com/" target="_blank">
                 <img src={figma} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="Dart" target="_blank">
+              <a href="https://dart.dev" target="_blank">
                 <img src={dart} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="Flutter" target="_blank">
+              <a href="https://flutter.dev" target="_blank">
                 <img src={flutter} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="Android" target="_blank">
+              <a href="https://developer.android.com" target="_blank">
                 <img src={android} alt="skill-logo" />
               </a>
             </li>
             <li className="skills-item">
-              <a href="Postman" target="_blank">
+              <a href="https://www.javascript.com/" target="_blank">
+                <img src={js} alt="skill-logo" />
+              </a>
+            </li>
+            <li className="skills-item">
+              <a href="https://www.postman.com/" target="_blank">
                 <img src={post} alt="skill-logo" />
               </a>
             </li>

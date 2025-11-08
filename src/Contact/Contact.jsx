@@ -57,6 +57,7 @@ export default function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
+            autoComplete="off"
           />
 
           <input
@@ -67,6 +68,7 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
+            autoComplete="off"
           />
 
           <input
@@ -77,6 +79,7 @@ export default function Contact() {
             value={formData.subject}
             onChange={handleChange}
             required
+            autoComplete="off"
           />
 
           <textarea
@@ -86,9 +89,12 @@ export default function Contact() {
             value={formData.message}
             onChange={handleChange}
             required
+            autoComplete="off"
           ></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" id="message-button">
+            Send Message
+          </button>
         </form>
       </article>
     </Main>

@@ -69,20 +69,55 @@ nav li {
   border-radius: 15px;
   object-fit: cover;
 }
-
-/* .project-list h6 {
-  margin: 5 1em;
-  margin-top: 1em;
-  font-size: 1em;
-  font-weight: 500;
+.project-wrapper-mobile {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32vh, 1fr));
+  gap: 1.5em;
+  list-style-type: none;
+  width: 100%;
 }
-.project-list p {
-  margin-left: 1.1em;
-} */
+.project-list-mobile {
+  height: 70vh;
+  width: 33vh;
+  margin-left: 3em;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 2px rgb(144, 142, 142);
+  background-color: var(--main-color);
+}
+.project-list-mobile a {
+  display: block;
+  height: 100%;
+}
+.project-list-mobile a figure {
+  height: 100%;
+  overflow: hidden;
+}
+.project-list-mobile a figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: contain;
+}
 .portfolio-nav {
   margin-left: 1em;
 }
 
 .portfolio-nav li.active {
   color: var(--gold-color);
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-wrapper-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32vh, 1fr));
+    gap: 1em;
+    list-style-type: none;
+    width: 100%;
+  }
+  .project-list-mobile {
+    height: 70vh;
+    width: 33vh;
+    margin: 0.5em auto;
+    overflow: hidden;
+  }
 }

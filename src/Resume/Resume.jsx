@@ -11,7 +11,7 @@ export default function Resume() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Bezawit Sebsbe cv.pdf"; // Path to your CV file
+    link.href = "/Bezawit Sebsbe Resume.pdf"; // Path to your CV file
     link.download = "Bezawit Sebsbe.pdf"; // Filename for the downloaded file
     document.body.appendChild(link);
     link.click();
@@ -34,7 +34,8 @@ export default function Resume() {
             <div class="circle"> </div>
             <div class="content">
               <h3 className="main-title">Addis Ababa University</h3>
-              <p>Bachelor of Science in Software Engineering</p>
+              <p id="bold">Bachelor of Science in Software Engineering</p>
+
               <p id="duration">2022-2027</p>
             </div>
           </div>
@@ -51,20 +52,22 @@ export default function Resume() {
         <div className="resume-container2">
           <div class="bullet">
             <div class="content">
-              <h3 className="main-title">Skills</h3>
+              <h3 className="main-title">Technical Skills</h3>
               <div className="circle"></div>
-              <p className="experiance-paragraph">
-                <div className="mini-circle"></div>
-                Advanced:python,javascript,React,NodeJs
-              </p>
-              <p className="experiance-paragraph">
-                <div className="mini-circle"></div>
-                Intermediate:Java,Linux,NextJs,ExpressJs,MySQL,MongoDB
-              </p>
-              <p className="experiance-paragraph">
-                <div className="mini-circle"></div>
-                Beginner:C#,Angular
-              </p>
+              <div className="Skills-list">
+                <p>Python</p>
+                <p>Javascript</p>
+                <p>React</p>
+                <p>MySQL</p>
+                <p>Kotlin</p>
+                <p>NodeJs</p>
+                <p>Linux</p>
+                <p>React Native</p>
+                <p>Angular</p>
+                <p>MongoDB</p>
+                <p>Flutter</p>
+                <p>NextJs</p>
+              </div>
             </div>
           </div>
         </div>
@@ -79,8 +82,13 @@ export default function Resume() {
               </p>
               <p className="experiance-paragraph">
                 <div className="mini-circle"></div>
-                Certification in Cybersecurity, Python Programming, and Network
-                Security from Cisco Networking Academy.
+                Completed courses in CyberOps, Python Programming, earning
+                certifications from Cisco Networking Academy.
+              </p>
+              <p className="experiance-paragraph">
+                <div className="mini-circle"></div>
+                Completed Courses in Network Security, and Linux Essentials,
+                earning certifications from Cisco Networking Academy.
               </p>
             </div>
           </div>

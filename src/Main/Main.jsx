@@ -1,8 +1,8 @@
 import React from "react";
 import "./Main.css";
-import logo from "../assets/logo192.png";
+import logo from "../assets/portfolio_image.jpg";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -12,19 +12,42 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
-
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 export default function Main({ children, NameOfScreen }) {
-  const [showcontact, setshowcontact] = useState(false);
-
+  const [showcontact, setShowContact] = useState(false);
+  const [viewportSize, setViewportSize] = useState({
+    isMobile: window.innerWidth <= 768,
+    isTablet: window.innerWidth > 768 && window.innerWidth <= 1024
+  });
   const handleShowContact = () => {
-    setshowcontact((prev) => !prev);
+    setShowContact((prev) => !prev);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportSize({
+        isMobile: window.innerWidth <= 768,
+        isTablet: window.innerWidth > 768 && window.innerWidth <= 1024
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <article className="body">
       <div
         className="main-header"
         style={{
-          paddingBottom: showcontact ? "12em" : "0",
+          paddingBottom: showcontact
+            ? viewportSize.isMobile
+              ? "30em"
+              : viewportSize.isTablet
+              ? "24em"
+              : "12em"
+            : "0",
           transition: "padding-bottom 0.5s ease"
         }}
       >
@@ -33,12 +56,24 @@ export default function Main({ children, NameOfScreen }) {
         </div>
         <div className="name-div">
           <h1>Bezawit Sebsbe</h1>
-          <a className="job-title" href="#">
-            Software developer
-          </a>
+          <a className="job-title">Software developer</a>
         </div>
         <button className="show-contact" href="#" onClick={handleShowContact}>
-          {showcontact ? "Hide Contacts" : "Show Contacts"}
+          {viewportSize.isMobile ? (
+            showcontact ? (
+              <div className="show-contact-icon">
+                <FontAwesomeIcon icon={faChevronUp} />
+              </div>
+            ) : (
+              <div className="show-contact-icon">
+                <FontAwesomeIcon icon={faChevronDown} />
+              </div>
+            )
+          ) : showcontact ? (
+            "Hide Contacts"
+          ) : (
+            "Show Contacts"
+          )}
         </button>
         {showcontact && (
           <div className="contacts-wrapper">
@@ -77,13 +112,13 @@ export default function Main({ children, NameOfScreen }) {
               </div>
             </div>
             <div className="contacts-footer">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a href="#">
+              <a href="https://github.com/bezawitsebsbe">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="#">
+              <a href="https://x.com/beza_sebe">
                 <FontAwesomeIcon icon={faXTwitter} />
               </a>
             </div>
