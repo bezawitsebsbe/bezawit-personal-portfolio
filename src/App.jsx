@@ -3,7 +3,7 @@ import About from "./About/about";
 import Resume from "./Resume/Resume";
 import Contact from "./Contact/Contact";
 import Portfolio from "./Portfolio/Portfolio";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 export default function App() {
   return (
@@ -13,6 +13,7 @@ export default function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   );
